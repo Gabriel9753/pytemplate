@@ -1,16 +1,16 @@
-tqdm==4.66.1
+tqdm
 
-# pandas==2.1.1
-# numpy==1.26.1
-# matplotlib==3.8.0
-# scikit-learn==1.3.1
-# jupyter==1.0.0
+# pandas
+# numpy
+# matplotlib
+# scikit-learn
+# jupyter
 
 ### development
-black==23.10.0
-isort==5.12.0
-bandit==1.7.5
-mypy==1.6.1
-pylint==3.0.2
+black
+isort
+bandit
+mypy
+pylint
 
 ### add specific project dependencies here:
