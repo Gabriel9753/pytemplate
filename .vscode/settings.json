@@ -1,30 +1,19 @@
 {
+    "black-formatter.args": [
+        "--line-length",
+        "120"
+    ],
+    "flake8.args": [
+        "--max-line-length",
+        "120"
+    ],
     "[python]": {
         "editor.tabSize": 4,
         "editor.rulers": [
             120
-        ],
-        "editor.wordWrap": "wordWrapColumn",
-        "editor.formatOnSave": true,
-        "editor.insertSpaces": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        },
+        ]
     },
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "editor.formatOnSave": true
-    },
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "files.watcherExclude": {
-        "**/.output/**": true
-    },
+    // Files to exclude in the explorer
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -32,28 +21,87 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/__pycache__": true,
-        "**/.venv": true // Excluding .venv from the explorer
+        "**/.venv": true,
+        "**/node_modules": true,
+        "**/.next": true,
+        "**/.husky": true,
+        "**/drizzle": true,
+        "**/dist": true,
+        "**/.todo.md": true,
+        "**/.vscode": true,
+        "**/.eslintrc.cjs": true,
+        "**/.editorconfig": true,
+        "**/.gitignore": true,
+        "**/.lintstagedrc.mjs": true,
+        "**/.markdownlint.json": true,
+        "**/.markdownlintignore": true,
+        "**/.prettierignore": true,
+        "**/bun.lockb": true,
+        "**/cspell.json": true,
+        "**/package-lock.json": true,
+        "**/pnpm-lock.yaml": true,
+        "**/next-env.d.ts": true,
+        "**/postcss.config.cjs": true,
+        "**/prettier.config.js": true,
+        "**/README.md": true,
+        "**/next.config.js": true,
+        "**/tailwind.config.ts": true,
+        "**/drizzle.config.ts": true,
+        "**/migrate.ts": true,
+        "**/.env.example": true
     },
     "git.ignoreLimitWarning": true,
     "[markdown]": {
         "files.trimTrailingWhitespace": false
     },
-    // Additional useful settings for working in VS Code:
-    "editor.minimap.enabled": true, // Show a minimap on the right side for quick navigation.
-    "explorer.confirmDelete": false, // Do not ask for confirmation when deleting files from the explorer.
-    "explorer.confirmDragAndDrop": false, // Do not ask for confirmation when moving files using drag and drop.
-    "workbench.editor.enablePreview": true, // Preview files when clicking them in the explorer.
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "120"
-    ],
-    "python.sortImports.args": [
-        "--profile",
-        "black"
-    ],
-    "python.terminal.activateEnvironment": true, // Automatically activate the virtual environment when opening a terminal.
-    "python.linting.pylintEnabled": true, // Enable pylint
-    "python.linting.enabled": true, // Enable linting in general
-    "python.linting.lintOnSave": true // Lint the file when you save it
+    // Change font
+    "editor.fontFamily": "Geist Mono",
+    "scm.inputFontFamily": "Geist Mono",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "chat.editor.fontFamily": "Geist Mono",
+    "debug.console.fontFamily": "Geist Mono",
+    "editor.codeLensFontFamily": "Geist Mono",
+    "notebook.output.fontFamily": "Geist Mono",
+    "markdown.preview.fontFamily": "Geist Mono",
+    "editor.inlayHints.fontFamily": "Geist Mono",
+    // Theme
+    "workbench.colorTheme": "Aura Soft Dark",
+    "workbench.iconTheme": "moxer-icons",
+    // Font size
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    // ui
+    "editor.minimap.enabled": false,
+    "window.commandCenter": false,
+    "editor.scrollbar.vertical": "auto",
+    "editor.scrollbar.horizontal": "auto",
+    // APC
+    "apc.activityBar": {
+        "position": "bottom",
+        "hideSettings": true,
+        "size": 28
+    },
+    "apc.electron": {
+        "titleBarStyle": "hiddenInset",
+        "trafficLightPosition": {
+            "x": 12,
+            "y": 10
+        }
+    },
+    "apc.font.family": "Geist Mono",
+    "apc.monospace.font.family": "Geist Mono",
+    "apc.statusBar": {
+        "position": "editor-bottom",
+        "height": 28,
+        "fontSize": 12
+    },
+    // Misc
+    "workbench.startupEditor": "none",
+    "explorer.compactFolders": false,
+    "editor.linkedEditing": true,
+    "breadcrumbs.filePath": "off",
+    "files.trimTrailingWhitespace": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "window.zoomLevel": 1
 }
