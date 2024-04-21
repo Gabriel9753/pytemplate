@@ -1,10 +1,18 @@
 tqdm
+python-dotenv
+
+
 
 # pandas
+# pyarrow
+# fastparquet
 # numpy
 # matplotlib
 # scikit-learn
 # jupyter
+# seaborn
+# polars
+# pendulum
 
 ### development
 black
@@ -12,5 +20,7 @@ isort
 bandit
 mypy
 pylint
+loguru
+icecream
 
 ### add specific project dependencies here:
